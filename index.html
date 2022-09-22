@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.contenedor{
+           width: 100%; 
+			 
+		}
+		header{
+			width: 100%;
+          
+            background: teal;
+			display: flex;
+		}
+		.logo{
+			border: 1px black solid;
+			padding: 10px;
+			margin: 15px;
+        	font-family: fantasy;
+			font-size: 27px ;
+			color: #8ce1f5;
+			text-shadow: 0 0 20px #000000;
+			text-shadow: 2px 5px 1px #000000;
+			} 		
+		.menu{
+			width: 50%;		
+			margin: 15px;
+		}
+		ul{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+	    }
+	    li{
+	    	list-style: none;
+	    	color: white;
+	    	
+	    	width: 125px;
+	    	padding: 17px;
+	    		background:#5f72a9;
+	    		text-align: center;
+	    		text-transform: uppercase;
+	    		
+	    }
+	    li:hover{
+	    	background: #008ad3;
+	    }
+	    a{text-decoration: none;
+	    	color :white;
+	    }
+	    figure{
+	    	display: flex;
+	    }
+	    .caja{
+	    	width: 50%;    	 
+	    }
+	    img{
+	    	width: 100%;
+	    	height: 510px;
+	    }
+	    img:hover{
+	    	opacity: 0.7;
+	    }
+	    section{
+           text-align: center;
+	    	background: #bfc4dc;
+	    	padding: 30px;
+	    }
+ 		footer{
+	    	display: flex;
+	    }
+	    .subcaja{
+	    	width: 25%;
+	    	padding-left: 20px;
+	    	padding-right: 20px;
+	    	padding-top: 35px;
+	    	padding-bottom: 35px;
+	    	background: #3b5998;
+	    	text-align: justify;	    	 
+	    }
+	    p{
+	    	font-size: 20px;
+	    	margin: 10px;
+	    }
+	    .formulario{
+	    	text-align: center;
+	    	background: #3b5998;
+	    	padding: 40px;
+	    }
+	    input{
+	    	width: 50%;
+	    	height: 40px;
+	    	border-radius: 4px;
+	    	margin: 10px;
+	    }
+	    h3{
+	    	text-align: center;
+	    	color: white;
+	    }
+	    .btn{
+        background: #008CBA;
+        color: white;
+	    }
+	    .btn:hover{
+	    	background: #09aaff;
+	    }
+	</style>
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<script type="text/javascript">
+	 function Mensaje(){
+	 	var nombre=document.getElementById("nom").value;
+        alert("Bienvenido "+nombre);
+
+	 }
+	  function Mensaje2(){
+	 	var numero=document.getElementById("valor").value;
+        var resultado=numero*6.96; 
+        alert(resultado+" Bs.");
+	 }
+</script>
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+			<div class="logo">
+				<i class='fas fa-laptop-code'></i> RAMIRO MENDOZA
+			</div>
+			<nav  class="menu">
+				<ul >
+					<li><a href="#"><i class="fa-solid fa-house-chimney"></i> Inicio</a></li>
+					<li><a href="https://ramiromendoza.blogspot.com/"><i class="fa-brands fa-blogger-b"></i> Blog</a></li>
+					<li><a href="#"><i class="fa-solid fa-users"></i> CONÓCENOS</a></li>
+					<li><a href="#contactos"><i class="fa-solid fa-address-card"></i> Contacto</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<figure>
+			<div class="caja">
+				<img src="img/foto4.png">
+		    </div>
+			<div class="caja">
+				<img src="img/foto.png">
+			</div>
+		</figure>
+		<section>
+			 <h2>REGISTRATE</h2><br>
+				Nombre y Apellido<br>
+				<input type="text" name="" id="nom"><br>
+				Email<br>
+                <input type="text" name=""><br>
+                Asunto<br>
+                <input type="text" name=""><br>
+                Teléfono<br>
+                <input type="text" name=""><br><br>
+                <input type="button"   onclick="Mensaje();"  value="INICIAR SESIÓN" class="btn">  <br>            
+ 		</section>
+		<div class="formulario">
+			<h2>CONTACTOS</h2><br>
+			 
+				<input type="text" name="" id="valor"><br><br>
+				<input type="button" name="" onclick="Mensaje2()" value="REGISTRAR" class="btn"><br>
+			<div class="logo">
+				<i class="fa-sharp fa-solid fa-desktop"></i> RAMIRO MENDOZA
+			</div>
+		</div>
+		<footer>
+			<div class="subcaja">
+				<h3>MISION</h3>
+				<p>
+					Proporcionar a la población estudiantil una oportunidad de formarse como técnicos medios en la especialidad de Sistemas Informáticos la cual les permita continuar con sus estudios en un instituto Superior y acceder a una mejor calidad de vida.
+				</p>
+			</div>
+			<div class="subcaja">
+				<h3>VISION</h3>
+				<p>
+					Constituimos como un colegio líder en la formación de técnicos medios altamente competitivos con calidad técnica, científica e integral, capaces de transformar y contribuir con la fuerza del Evangelio a la construcción de una sociedad más justa y fraterna
+				</p>
+			</div>
+			<div class="subcaja" id="contactos">
+				<h3>CONTACTOS</h3> 
+				<p>
+				<i class="fa-brands fa-whatsapp"></i> 72347557<br>
+				<i class="fa-solid fa-phone"></i> 252- 23455<br>
+				<i class="fa-solid fa-location-dot"></i> Tejerina Nro 100 entre Junin y Ayacucho <br>
+				<i class="fa-solid fa-envelope"></i> ramiromendoza13@gmail.com<br>
+				</p>
+			</div>
+			<div class="subcaja">
+				<h3>REDES SOCIALES </h3>
+				<p>
+					<a href="https://www.facebook.com/ramiromendozag">
+						<i class="fa-brands fa-facebook"></i> Facebook
+					</a><br>
+					<a href="">
+						<i class="fa-brands fa-twitter"></i> Twitter
+					</a><br>
+					<a href="https://www.youtube.com/channel/UCsVR9KX66FlNhGrRo1_OyxQ">
+						<i class="fa-brands fa-youtube"></i> Youtube
+					</a><br>
+					<a href="https://www.linkedin.com/feed/">
+						<i class="fa-brands fa-linkedin"></i> Linkedin
+					</a><br>
+				</p>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
